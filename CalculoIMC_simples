@@ -1,0 +1,21 @@
+algoritmo "CalculoIMC"
+var
+   M, A, IMC: real
+inicio
+    Escreval("------------------------")
+    Escreval("Digite seu peso (KG): ")
+    Escreval("------------------------")
+    Leia(M)
+    Escreval("------------------------")
+    Escreval("Digite sua altura (m): ")
+    Escreval("------------------------")
+    Leia(A)
+    IMC <- M / (A ^ 2)
+    Escreval("------------------------")
+    Escreval("Seu IMC é: ", IMC:5:2)
+    Se (IMC >= 18.5) e (IMC < 25) entao
+       Escreva("Parabéns, você está a faixa de peso ideal! Continue assim. ")
+    senao
+       Escreva("Você não está na faixa de peso ideal. Busque melhorar. ")
+    FimSe
+fimalgoritmo
