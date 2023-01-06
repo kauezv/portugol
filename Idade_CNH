@@ -1,0 +1,27 @@
+algoritmo "IdadeCNH"
+var
+  ano_atual, ano_nasc, idade: inteiro
+inicio
+      Escreval("-----------------------------------")
+      Escreval(" DEPARTAMENTO REGIONAL DE TRÂNSITO ")
+      Escreval("-----------------------------------")
+      Escreval(" ")
+      Escreva("Ano Atual (yyyy): ")
+      Leia(ano_atual)
+      Escreva("Ano de Nascimento (yyyy): ")
+      Leia(ano_nasc)
+      idade <- ano_atual - ano_nasc
+      Se(idade >= 18) entao
+       Escreval(" ")
+       Escreval("---------------------STATUS----------------------------")
+       Escreval(" IDADE: ", idade, " ANOS")
+       Escreval(" APTO A EMITIR A CNH, ATENDE A IDADE MÍNIMA DE 18 ANOS")
+       Escreval("-------------------------------------------------------")
+      senao
+       Escreval(" ")
+       Escreval("---------------------STATUS--------------------------------")
+       Escreval(" IDADE: ", idade, " ANOS")
+       Escreval(" INAPTO A EMITIR A CNH, NÃO ATENDE IDADE MÍNIMA DE 18 ANOS")
+       Escreval("-----------------------------------------------------------")
+   FimSe
+fimalgoritmo
