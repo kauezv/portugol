@@ -1,0 +1,32 @@
+algoritmo "Media_Aluno"
+var
+  N1, N2, M: Real
+inicio
+      Escreval ("=====================")
+      Escreval (" AVALIAÇÃO DO ALUNO")
+      Escreval ("=====================")
+      Escreva ("Primeira nota: ")
+      Leia (N1)
+      Escreva ("Segunda nota: ")
+      Leia (N2)
+      M <- (N1 + N2) / 2
+      Escreval ("A média do aluno é: ", M:4:2)
+      Se (M >= 7) entao
+         Escreval (" ")
+         Escreval ("==========================")
+         Escreval (" Situação: Aluno APROVADO")
+         Escreval ("==========================")
+      senao
+           Se (M >= 5) e (M <7) entao
+              Escreval (" ")
+              Escreval ("=================================")
+              Escreval (" Situação: Aluno em RECUPERAÇÃO")
+              Escreval ("=================================")
+           senao
+              Escreval (" ")
+              Escreval ("===========================")
+              Escreval (" Situação: Aluno REPROVADO")
+              Escreval ("===========================")
+           FimSe
+      FimSe
+fimalgoritmo
