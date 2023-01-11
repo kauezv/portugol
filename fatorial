@@ -1,7 +1,9 @@
 algoritmo "fatorial"
 var
   Cont, Numero, Fatorial: inteiro
+  Resposta: caractere
 inicio
+Repita
   Escreval("====CÁLCULO FATORIAL====")
   Escreva("Digite um número: ")
   Leia (Numero)
@@ -12,5 +14,9 @@ inicio
       Fatorial <- Fatorial * Cont
       Cont <- Cont - 1
   Ate (Cont < 1)
-  Escreva(" O valor fatorial de", Numero, " é igual a:", Fatorial)
+  Escreval(" O valor fatorial de", Numero, " é igual a:", Fatorial)
+  Escreva("Quer continuar? [S/N]" )
+  Leia (Resposta)
+  LimpaTela
+Ate (Resposta = "Numero")
 fimalgoritmo
