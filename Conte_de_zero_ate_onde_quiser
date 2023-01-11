@@ -1,0 +1,14 @@
+algoritmo "Conte_de_zero_ate_onde_quiser"
+var
+   valor, contador: inteiro
+inicio
+      contador <- 0
+      Escreva("Quer contar até quanto? ")
+      Leia(valor)
+      Escreval("Início da contagem")
+      Enquanto (contador <= valor) faça
+         Escreval(contador)
+         contador <- contador + 1
+      FimEnquanto
+      Escreval("Término da contagem")
+fimalgoritmo
