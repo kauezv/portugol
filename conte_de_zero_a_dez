@@ -1,0 +1,12 @@
+algoritmo "Conte_de_zero_a_dez"
+var
+   contador: inteiro
+inicio
+      contador <- 10
+      Escreval("Início da contagem")
+      Enquanto (contador >= 0) faça
+         Escreval(contador)
+         contador <- contador - 1
+      FimEnquanto
+      Escreval("Término da contagem")
+fimalgoritmo
