@@ -1,0 +1,16 @@
+algoritmo "fatorial"
+var
+  Cont, Numero, Fatorial: inteiro
+inicio
+  Escreval("====CÁLCULO FATORIAL====")
+  Escreva("Digite um número: ")
+  Leia (Numero)
+  Escreval("========================")
+  Cont <- Numero
+  Fatorial <- 1
+  Repita
+      Fatorial <- Fatorial * Cont
+      Cont <- Cont - 1
+  Ate (Cont < 1)
+  Escreva(" O valor fatorial de", Numero, " é igual a:", Fatorial)
+fimalgoritmo
