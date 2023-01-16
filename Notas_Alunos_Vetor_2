@@ -1,0 +1,35 @@
+algoritmo "Notas_Alunos_Vetor"
+var
+  nome: vetor[1..4] de caractere
+  n1: vetor[1..4] de Real
+  n2: vetor[1..4] de Real
+  m: vetor[1..4] de Real
+  i: inteiro
+inicio
+  Escreval("LISTA DE ALUNOS (MÉDIAS)")
+  Escreval("=========================")
+  Para i <- 1 ate 4 faca
+     Escreval("ALUNO ", i)
+     Escreva("Nome: ")
+     Leia(nome[i])
+     Escreva("Primeira nota: ")
+     Leia(n1[i])
+     Escreva("Segunda nota: ")
+     Leia(n2[i])
+     Escreval(" ")
+     m[i] <- (n1[i] + n2[i]) / 2
+  FimPara
+  
+  LimpaTela
+  Escreval("LISTA DE ALUNOS (MÉDIAS)")
+  Escreval("=========================")
+  Para i <- 1 ate 4 faca
+     Escreval(nome[i]:15, m[i]:4:1)
+    Se (m[i] < 6.0) entao
+        Escreval("REPROVADO(A)")
+     Senao
+        Escreval("APROVADO(A)")
+     FimSe
+  Escreval(" ")
+  FimPara
+Fimalgoritmo
